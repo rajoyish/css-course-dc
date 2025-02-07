@@ -1,49 +1,73 @@
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    margin: 0 6.7em;
-    background: #FCF5EB;
-    font-family: "Poppins";
+  margin: 0;
+  background: #fcf5eb;
+  font-family: 'Poppins';
 }
 
 h1 {
-    font-family: 'Playfair Display';
+  font-family: 'Playfair Display';
+  text-wrap: pretty;
 }
 
 h1.mainhead {
-    font-size: 4.4rem;
-    margin-top: 5em;
-    position: relative;
+  font-size: 4.4rem;
+  margin-top: 2em;
+  position: relative;
 }
 
 h1.mainhead::before {
-    position: absolute;
-    content: 'N';
-    top: -13rem;
-    left: -8rem;
-    font-size: 30rem;
-    color: rgba(0,0,0,0.05);
-    pointer-events: none;
-    z-index: -1;
+  position: absolute;
+  content: 'N';
+  top: -13rem;
+  left: -8rem;
+  font-size: 30rem;
+  color: rgba(0, 0, 0, 0.05);
+  pointer-events: none;
+  z-index: -1;
 }
 
 main {
-    margin: 5em;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2.4em;
 }
 
 section {
-    display: flex;
-    gap: 5.7em;
-    border-top: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid black;
 }
 
 section h1 {
-    font-size: 2.2rem;
+  font-size: 2.2rem;
 }
 
 p {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
+@media screen and (min-width: 600px) {
+  section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3em;
+  }
+
+  article {
+    flex: 1;
+  }
+
+  article:nth-of-type(1) {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  article:nth-of-type(1) {
+    flex-basis: 0;
+  }
+}
