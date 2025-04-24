@@ -38,7 +38,7 @@ h1 {
 }
 
 a {
-  background-color: var(--secondary)
+  background-color: var(--secondary);
   padding: 0.8em 0.8em 0.4em;
   border-radius: 0.3em;
 }
@@ -61,7 +61,7 @@ span {
   cursor: pointer;
 }
 
-span:hover { 
+span:hover {
   background: var(--secondary);
-  border-radius: .3em;
+  border-radius: 0.3em;
 }
