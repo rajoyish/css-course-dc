@@ -110,8 +110,83 @@ section.features svg {
   margin-left: -0.15em;
 }
 
-section.features strong  {
+section.features strong {
   display: flex;
   flex-direction: column;
   font-size: 2.6rem;
+}
+
+/* Testimonial Section */
+h2 {
+  font-size: 2.8rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+}
+
+.testimonial-quote p {
+  margin-bottom: 2em;
+}
+
+.author-pic {
+  width: 100%;
+  border-radius: 1.2em;
+  height: 17.7em;
+  object-fit: cover;
+  margin-bottom: 2em;
+}
+
+.author strong {
+  font-size: 2rem;
+  display: block;
+}
+
+.author a {
+  color: black;
+}
+
+ul.social-nav {
+  display: flex;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+ul.social-nav svg {
+  width: 3rem;
+}
+
+/* Footer Section */
+footer {
+  background-color: #ededed;
+  padding: 1.6em 0;
+  margin-top: 5em;
+}
+
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a {
+  color: black;
+}
+
+nav.footer-nav ul,
+nav.secondary-nav ul {
+  display: flex;
+  gap: 2em;
+}
+
+nav.footer-nav ul {
+  justify-content: right;
+}
+
+nav.secondary-nav ul {
+  margin-top: 4em;
+}
+
+nav.secondary-nav a {
+  color: #363636;
+  text-decoration: underline;
+  font-size: 1.4em;
 }
