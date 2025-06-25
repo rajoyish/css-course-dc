@@ -286,3 +286,58 @@ nav.secondary-nav a {
     justify-content: space-between;
   }
 }
+
+/* Media Queries - Desktop */
+@media only screen and (min-width: 950px) {
+  .wrapper {
+    max-width: 1000px;
+    margin: 2em auto;
+  }
+
+  .phone {
+    width: 500px;
+    left: -100px;
+  }
+
+  .hero .right-col {
+    width: 500px;
+    height: 600px;
+    overflow: inherit;
+  }
+
+  /* Features Section */
+  section.features .wrapper ul {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    height: 300px;
+  }
+
+  section.features .wrapper ul li:last-of-type {
+    grid-column: auto;
+    align-self: end;
+  }
+
+  section.features .wrapper ul li:nth-of-type(2) {
+    align-self: center;
+  }
+
+  section.features::before {
+    left: 20%;
+  }
+
+  /* Testimonials Section */
+  .testimonial {
+    display: flex;
+    gap: 4em;
+    margin: 12em 0;
+  }
+
+  .testimonial-quote,
+  .testimonial-info {
+    flex: 1;
+  }
+
+  .testimonial h2 {
+    margin-top: 0;
+  }
+}
