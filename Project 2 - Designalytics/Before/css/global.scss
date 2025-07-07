@@ -4,28 +4,24 @@ html {
 
 body {
   margin: 0;
-  background-color: #1F2023;
-  font-family: "Inter", sans-serif;
+  background-color: #1f2023;
+  font-family: 'Inter', sans-serif;
 }
 
 .wrapper {
   margin: 2em;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li, p, a {
+li,
+p,
+a {
   font-size: 1.6rem;
 }
 
 a {
   color: var(--link-color);
   text-decoration: none;
-  font-family: "Inter", sans-serif;
+  font-family: inherit;
 }
 
 p {
@@ -36,11 +32,6 @@ svg {
   width: 100%;
 }
 
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-/* Utils */
 .hide-mobile {
   display: none;
 }
@@ -49,4 +40,4 @@ svg {
   .hide-tablet {
     display: none;
   }
-}/*# sourceMappingURL=global.css.map */
+}
